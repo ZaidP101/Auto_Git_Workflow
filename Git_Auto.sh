@@ -50,13 +50,13 @@ git_commit() {
 }
 
 git_push() {
-	git diff --cached --quiet
-	if [ $? -eq 0 ]; then
-		echo "Nothing to push"
-	else
+	#git diff --cached --quiet
+	#if [ $? -eq 0 ]; then
+	#	echo "Nothing to push"
+	#else
 		git push -u origin main
-		echo "Pushed to the remote repository. Enter your username and authentication key if prompted"
-	fi
+	#	echo "Pushed to the remote repository. Enter your username and authentication key if prompted"
+	#fi
 
 }
 
